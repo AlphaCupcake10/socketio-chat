@@ -13,3 +13,13 @@ body
 {
     @apply bg-background shadow-xl rounded-xl outline outline-1 outline-text/20
 }
+
+::-webkit-scrollbar
+{
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb
+{
+  @apply bg-primary rounded-full;
+}
