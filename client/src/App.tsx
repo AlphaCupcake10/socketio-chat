@@ -32,7 +32,7 @@ function App()
                 isConnected ? null : <div className="bg-red-500 text-white text-center p-2">Disconnected from server</div>
             }
             <Routes>
-                <Route path="/" element={<RoomPage />} />
+                <Route path="/" element={<RoomPage connectionStatus={isConnected} socket={socket} />} />
                 <Route path="/chat" element={<ChatPage />} />
             </Routes>
         </>

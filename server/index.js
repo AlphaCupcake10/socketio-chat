@@ -5,5 +5,9 @@ const io = require('socket.io')(3000,{
 });
 
 io.on('connection', socket => {
-    console.log(socket.id);
+    console.log("New User Connected: ", socket.id);
+});
+
+io.on('disconnect', socket => {
+    console.log("User Disconnected: ", socket.id);
 });
